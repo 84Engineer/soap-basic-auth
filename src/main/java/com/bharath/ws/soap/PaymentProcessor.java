@@ -14,5 +14,6 @@ public interface PaymentProcessor {
    @WebMethod
    public @WebResult(name = "response")
    PaymentProcessorResponse processPayment(
-         @WebParam(name = "paymentProcessorRequest") PaymentProcessorRequest paymentProcessorRequest);
+         @WebParam(name = "paymentProcessorRequest") PaymentProcessorRequest paymentProcessorRequest)
+         throws ServiceException;
 }
